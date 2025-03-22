@@ -36,13 +36,20 @@ function resetInstructions() {
 }
 
 
-// const element = document.querySelectorAll(".headers");
-// element.addEventListener('click', () => {
-//     element.classList.add('animate__animated', 'animate__flash');
-// })
-
 const element = document.querySelectorAll(".headers")[0];
 element.addEventListener('click', () => {
     console.log(element);
     element.className = 'animate__animated animate__bounce';
+});
+
+const element1 = document.querySelectorAll(".headers")[1];
+element1.addEventListener('click', () => {
+    console.log(element);
+    element1.className = 'animate__animated animate__bounce';
+});
+
+const cake = document.querySelector("#cake");
+cake.addEventListener('click', () => {
+    console.log(element);
+    cake.className = 'animate__animated animate__bounce';
 });
