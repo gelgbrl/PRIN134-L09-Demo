@@ -3,6 +3,10 @@ const instructionsList = document.getElementById('recipe-instructions');
 const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
 const button3 = document.getElementById('button3');
+const ingredientsHeader = document.getElementById('ingredients-header');
+const instructionsHeader = document.getElementById('instructions-header');
+const cake = document.getElementById('cake');
+
 
 function highlightIngredients() {
     const ingredients = ingredientsList.getElementsByTagName('li');
@@ -35,20 +39,23 @@ function resetInstructions() {
 }
 
 
-const element = document.querySelectorAll(".headers")[0];
-element.addEventListener('click', () => {
-    console.log(element);
-    element.className = 'animate__animated animate__bounce';
+ingredientsHeader.addEventListener('click', () => {
+    ingredientsHeader.classList.add('animate__animated', 'animate__bounce');
+    setTimeout(() => {
+        ingredientsHeader.classList.remove('animate__animated', 'animate__bounce');
+    }, 1000); 
 });
 
-const element1 = document.querySelectorAll(".headers")[1];
-element1.addEventListener('click', () => {
-    console.log(element);
-    element1.className = 'animate__animated animate__bounce';
+instructionsHeader.addEventListener('click', () => {
+    instructionsHeader.classList.add('animate__animated', 'animate__bounce');
+    setTimeout(() => {
+        instructionsHeader.classList.remove('animate__animated', 'animate__bounce');
+    }, 1000); 
 });
 
-const cake = document.querySelector("#cake");
 cake.addEventListener('click', () => {
-    console.log(element);
-    cake.className = 'animate__animated animate__bounce';
+    cake.classList.add('animate__animated', 'animate__bounce');
+    setTimeout(() => {
+        cake.classList.remove('animate__animated', 'animate__bounce');
+    }, 1000); 
 });
