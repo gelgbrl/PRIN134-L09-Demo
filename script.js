@@ -28,10 +28,9 @@ function checkInstructions() {
 }
 
 function resetInstructions() {
-    const instructions = instructionsList.getEelementsByTagName('li');
-
-    if (index < instructions.length) {
-        instructions[index].classList.remove('is-done');
+    const instructions = instructionsList.getElementsByTagName('li');
+    for (let i = 0; i < instructions.length; i++) {
+        instructions[i].classList.remove('is-done');
     }
 }
 
