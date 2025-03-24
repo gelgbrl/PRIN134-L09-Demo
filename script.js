@@ -3,8 +3,8 @@ const instructionsList = document.getElementById('recipe-instructions');
 const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
 const button3 = document.getElementById('button3');
-const ingredientsHeader = document.getElementById('ingredients-header');
-const instructionsHeader = document.getElementById('instructions-header');
+const ingredientsHeader = document.getElementsByClassName('headers')[0];
+const instructionsHeader = document.getElementsByClassName('headers')[1];
 const cake = document.getElementById('cake');
 
 
